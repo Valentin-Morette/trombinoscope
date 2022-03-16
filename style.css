@@ -1,25 +1,3 @@
-/*
-* {
-    box-sizing: border-box;
-}
-
-nav {
-    background-color: whitesmoke;
-    color: #f76c6c;
-    box-shadow: 10px 5px 5px gray;
-    
-}
-
-img {
-    width : 150px;
-    height : 150px;
-}
-
-footer {
-    background-color:whitesmoke;
-    box-shadow: 10px 5px 5px gray;
-}
-
-@media only screen and (max-width: 360px) {
-
+.icon img, .icon{
+    height: 24px;
 }
