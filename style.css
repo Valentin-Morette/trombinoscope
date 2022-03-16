@@ -1,6 +1,13 @@
+@font-face {
+    font-family: "comfortaa";
+    src: url(./fonts/Comfortaa-VariableFont_wght.ttf);
+}
 * {
     margin: 0;
     padding: 0;
+}
+body{
+    font-family: comfortaa;
 }
 .icon img, .icon{
     height: 24px;
@@ -35,12 +42,6 @@
 
 .globalteacher > div > p {
     text-align: center;
-@font-face {
-    font-family: "comfortaa";
-    src: url(./fonts/Comfortaa-VariableFont_wght.ttf);
-}
-body{
-    font-family: comfortaa;
 }
 .trombi{
     display: grid;
