@@ -2,15 +2,14 @@
     font-family: "comfortaa";
     src: url(./fonts/Comfortaa-VariableFont_wght.ttf);
 }
+
 * {
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: comfortaa;
-}
-.icon img, .icon{
-    height: 24px;
 }
 
 .school {
@@ -32,10 +31,6 @@ body{
     margin: 2rem;
 }
 
-.logo{
-    width: 150px;
-}
-
 .teacher{
     width: 170px;
 }
@@ -43,12 +38,14 @@ body{
 .globalteacher > div > p {
     text-align: center;
 }
+
 .trombi{
     display: grid;
     gap : 2rem;
     grid-template-columns: 1fr 1fr;
     /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
 }
+
 .trombi>div{
     display : flex;
     flex-direction: column;
@@ -64,6 +61,65 @@ body{
 .iconstrombi{
     display: flex;
     gap : 2rem;
+}
+
+nav {
+    background-color: whitesmoke;
+    color: #f76c6c;
+    box-shadow: 10px 5px 5px #f76c6c;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+}
+nav>h1 {
+    position: sticky;
+    font-size: 3rem;
+}
+
+ul{
+    margin-right: 5rem;
+    display: none;
+}
+
+li {
+
+    list-style: none;
+    color: #f76c6c;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+}
+
+a{
+    text-decoration: none;
+    color: #f76c6c;
+}
+
+footer {
+    background-color:whitesmoke;
+    color: #f76c6c;
+    box-shadow: 5px -5px 5px #f76c6c;
+    margin-top: 20px;
+}
+
+
+.logo {
+    margin-left: 2rem;
+    width : 150px;
+    height : 150px;
+    display: block;
+}
+
+.classe > img {
+    width: 100%;
+}
+
+@media screen and (min-width: 450px) {
+    ul{
+        display:initial;
+    }
 }
 
 @media screen and (min-width : 450px){
