@@ -1,25 +1,15 @@
-/*
-* {
-    box-sizing: border-box;
+.trombi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-nav {
-    background-color: whitesmoke;
-    color: #f76c6c;
-    box-shadow: 10px 5px 5px gray;
-    
+.trombi div{
+    display : flex;
+    flex-direction: column;
+    border : 1px solid black;
 }
-
-img {
-    width : 150px;
-    height : 150px;
-}
-
-footer {
-    background-color:whitesmoke;
-    box-shadow: 10px 5px 5px gray;
-}
-
-@media only screen and (max-width: 360px) {
-
+.icons{
+    display: flex;
+    justify-content: flex-end;
 }
