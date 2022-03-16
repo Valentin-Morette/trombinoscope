@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --rouge-wild: rgba(237, 108, 109, 1);
+  --blanc-wild: rgba(249, 251, 251, 1);
+}
 
 @font-face {
   font-family: "Comfortaa";
@@ -22,12 +26,12 @@ body:not(nav):not(footer) {
 
 /********** SECTION PRESENTATION **********/
 .presentation-1 {
-  background-color: rgba(237, 108, 109, 1);
-  color: whitesmoke;
+  background-color: var(--rouge-wild);
+  color: var(--blanc-wild);
 }
 
 .presentation-2 {
-  background-color: whitesmoke;
+  background-color: var(--blanc-wild);
   color: rgba(237, 108, 109, 1);
 }
 
@@ -61,6 +65,7 @@ body:not(nav):not(footer) {
 .biographie > h4 {
   font-size: 1rem;
 }
+
 .biographie > h5 {
   font-size: 0.75rem;
 }
@@ -80,19 +85,31 @@ body:not(nav):not(footer) {
 }
 /***** END SECTION PRESENTATION *****/
 
-/* RESPONSIVE DESCRIPTION */
+/********** RESPONSIVE DESCRIPTION **********/
 @media screen and (min-width: 380px) {
   .presentation-1,
   .presentation-2 {
-    max-width: 80vw;
+    max-width: 65vw;
+    margin: 0 2rem 2rem 2rem;
   }
-
   .presentation-1 {
     float: left;
   }
-
   .presentation-2 {
     float: right;
+  }
+  .biographie > h2 {
+    font-size: 1.75rem;
+  }
+  .biographie > h4 {
+    font-size: 1.6rem;
+  }
+  .biographie > h5 {
+    font-size: 1.2rem;
+  }
+  .presentation-1 > p,
+  .presentation-2 > p {
+    font-size: 1.2rem;
   }
 }
 /* END RESPONSIVE DESCRIPTION */
