@@ -1,15 +1,43 @@
+@font-face {
+    font-family: "comfortaa";
+    src: url(./fonts/Comfortaa-VariableFont_wght.ttf);
+}
+body{
+    font-family: comfortaa;
+}
+*{
+    margin : 0;
+    padding : 0;
+}
+.logo{
+    width: 150px;
+}
 .trombi{
     display: grid;
+    gap : 2rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
 }
-
-.trombi div{
+.trombi>div{
     display : flex;
     flex-direction: column;
-    border : 1px solid black;
+    align-items: center;
+    gap : 20px;
 }
-.icons{
+.icon{
+    width: 24px;
+}
+.student{
+    width: 170px;
+}
+.iconstrombi{
     display: flex;
-    justify-content: flex-end;
+    gap : 2rem;
+}
+
+@media screen and (min-width : 450px){
+    .trombi{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
