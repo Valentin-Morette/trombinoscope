@@ -1,16 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.icon img, .icon{
+    height: 24px;
+}
+
+.school {
+    width: 100%;
+}
+
+.training {
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+}
+
+.globalteacher{
+    display: flex;
+    justify-content: space-around;
+}
+
+.texte {
+    margin: 2rem;
+}
+
+.logo{
+    width: 150px;
+}
+
+.teacher{
+    width: 170px;
+}
+
+.globalteacher > div > p {
+    text-align: center;
 @font-face {
     font-family: "comfortaa";
     src: url(./fonts/Comfortaa-VariableFont_wght.ttf);
 }
 body{
     font-family: comfortaa;
-}
-*{
-    margin : 0;
-    padding : 0;
-}
-.logo{
-    width: 150px;
 }
 .trombi{
     display: grid;
