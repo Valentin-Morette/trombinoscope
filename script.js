@@ -4,6 +4,7 @@ const randomValues = arr[randomIndex];
 console.log(randomValues);
 
 const randomButton = document.querySelector('.randomlink');
+
 randomButton.addEventListener('click', function () {
     randomButton.href = "#" + randomValues;
     });
