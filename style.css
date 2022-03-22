@@ -117,6 +117,19 @@ footer {
     width: 100%;
 }
 
+.button{
+  background-color: #f76c6c;
+  color : white;
+  padding : 1rem;
+  width: 100px;
+  border-radius: 25%;
+}
+
+.buttonfather{
+  display: flex;
+  justify-content: center;
+}
+
 :root {
   --rouge-wild: rgba(237, 108, 109, 1);
   --blanc-wild: rgba(249, 251, 251, 1);
