@@ -1,6 +1,0 @@
-function createDesc(data){
-    return `
-    
-    `
-
-}
