@@ -11,7 +11,7 @@ import createRedDesc from "./createRedDesc.js";
 //     return randomValues;
 // }
 
-const arr = ["Theo","Quentin","Louis","Jeffrey","Alexandra","Simon","Jaafar","Valentin"];
+const arr = ["Théo","Quentin","Louis","Jeffrey","Alexandra","Simon","Jaafar","Valentin"];
 
 const trombiAsArr = student.map(createTrombi);
 const trombiAsString = trombiAsArr.join("");
@@ -33,19 +33,28 @@ document.querySelector(".presentation").innerHTML = descAsString;
 
 
 
-// const randomButton = document.querySelector('.randomlink');
+const randomButton = document.querySelector('.randomlink');
 
-// randomButton.addEventListener('click', function () {
-//     const result = document.getElementById(
-//         randomName(arr)
-//     );
-//     window.scrollTo(
-//         result.getClientRects().x,
-//         result.getClientRects().y
-//     );
-//     //randomButton.href = "#" + result;
-//     });
+randomButton.addEventListener('click', function () {
+    const name = randomName(arr);
+    const element = document.getElementById(name);
 
-// randomButton.addEventListener('mouseover', function () {
-//     randomButton.style.cursor = "pointer";
-//     });
+    // thx https://plainjs.com/javascript/styles/get-the-position-of-an-element-relative-to-the-document-24/
+    function offset(el) {
+        const rect = el.getBoundingClientRect();
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+    }
+
+    const elementOffset = offset(element);
+
+    window.scrollTo(
+        elementOffset.left,
+        elementOffset.top - 106
+    );
+});
+
+randomButton.addEventListener('mouseover', function () {
+    randomButton.style.cursor = "pointer";
+    });
