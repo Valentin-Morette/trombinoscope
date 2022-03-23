@@ -44,7 +44,7 @@ randomButton.addEventListener('click', function () {
 
     window.scrollTo(
         elementOffset.left,
-        elementOffset.top - 106
+        elementOffset.top - 110
     );
 });
 
