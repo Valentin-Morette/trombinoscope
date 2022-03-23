@@ -125,7 +125,7 @@ footer {
   display: block;
 }
 
-.classe > img {
+.groupe > img {
   width: 100%;
 }
 
@@ -262,6 +262,25 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+}
+
+@media screen and (min-width : 450px) {
+  .groupeclasse{
+    display: flex;
+    justify-content: space-around;
+  }
+  .groupe{
+    width: 50%;
+    margin: 2rem;
+    display: flex;
+    align-items: center; 
+  }
+  .groupe > img{
+    width: 100%; 
+  }
+  .groupe > p{
+    width: 80%;
   }
 }
 
