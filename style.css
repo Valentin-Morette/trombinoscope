@@ -27,9 +27,21 @@ body:not(nav):not(footer) {
   font-size: 2em;
 }
 
-.globalteacher {
-  display: flex;
-  justify-content: space-around;
+.globalteacher{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.globalteacher > div:last-child{
+  grid-column-start: 1;     
+  grid-column-end: -1; 
+}
+
+.globalteacher > div {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 20px;
 }
 
 .teacher {
@@ -118,7 +130,7 @@ a {
   display: block;
 }
 
-.classe > img {
+.groupe > img {
   width: 100%;
 }
 
@@ -277,9 +289,37 @@ a {
   }
 }
 
+
 @media screen and (min-width: 450px) {
   .top-link {
     display: none;
+  }
+}
+
+@media screen and (min-width : 450px) {
+  .globalteacher{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width : 450px) {
+  .groupeclasse{
+    display: flex;
+    justify-content: space-around;
+  }
+  .groupe{
+    width: 50%;
+    margin: 2rem;
+    display: flex;
+    align-items: center; 
+  }
+  .groupe > img{
+    width: 100%; 
+  }
+  .groupe > p{
+    width: 80%;
   }
 }
 
