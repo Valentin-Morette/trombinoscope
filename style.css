@@ -169,10 +169,15 @@ a {
 }
 
 .box-img {
+  width: 85%;
   height : 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.box-img > img{
+  width: 100%;
 }
 
 /********** SECTION PRESENTATION **********/
@@ -295,6 +300,10 @@ a {
 @media screen and (min-width: 450px) {
   ul {
     display: initial;
+  }
+  .box-img{
+    width: 55%;
+    height : 280px;
   }
 }
 
