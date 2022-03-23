@@ -1,20 +1,20 @@
 @font-face {
-    font-family: "comfortaa";
-    src: url(./fonts/Comfortaa-VariableFont_wght.ttf);
+  font-family: "comfortaa";
+  src: url(./fonts/Comfortaa-VariableFont_wght.ttf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  scroll-padding-top : 100px;
+  scroll-padding-top: 100px;
   scroll-behavior: smooth;
 }
 
-body{
-    font-family: comfortaa;
+body {
+  font-family: comfortaa;
 }
 
 body:not(nav):not(footer) {
@@ -22,9 +22,9 @@ body:not(nav):not(footer) {
 }
 
 .training {
-    text-align: center;
-    padding: 20px;
-    font-size: 2em;
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
 }
 
 .globalteacher{
@@ -44,101 +44,100 @@ body:not(nav):not(footer) {
     gap : 20px;
 }
 
-.teacher{
-    width: 170px;
+.teacher {
+  width: 170px;
 }
 
 .globalteacher > div > p {
-    text-align: center;
+  text-align: center;
 }
 
-.trombi{
-    display: grid;
-    gap : 2rem;
-    grid-template-columns: 1fr 1fr;
-    padding-top : 150px;
+.trombi {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 150px;
 }
 
-.trombi>div{
-    display : flex;
-    flex-direction: column;
-    align-items: center;
-    gap : 20px;
+.trombi > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-.icon{
-    width: 24px;
+.icon {
+  width: 24px;
 }
 
-.student{
-    width: 170px;
+.student {
+  width: 170px;
 }
 
-.iconstrombi{
-    display: flex;
-    gap : 2rem;
+.iconstrombi {
+  display: flex;
+  gap: 2rem;
 }
 
 nav {
-    background-color: whitesmoke;
-    color: #f76c6c;
-    box-shadow: 10px 5px 5px #f76c6c;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    justify-content: space-between;
-    width: 100%;
+  background-color: whitesmoke;
+  color: #f76c6c;
+  box-shadow: 10px 5px 5px #f76c6c;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
 }
 
-nav>h1 {
-    font-size: 3rem;
+nav > h1 {
+  font-size: 3rem;
 }
 
-ul{
-    margin-right: 5rem;
-    display: none;
+ul {
+  margin-right: 5rem;
+  display: none;
 }
 
 li {
-
-    list-style: none;
-    color: #f76c6c;
-    font-size: 1.5rem;
-    padding: 0.3rem;
+  list-style: none;
+  color: #f76c6c;
+  font-size: 1.5rem;
+  padding: 0.3rem;
 }
 
-a{
-    text-decoration: none;
-    color: #f76c6c;
+a {
+  text-decoration: none;
+  color: #f76c6c;
 }
 
 footer {
-    background-color:whitesmoke;
-    color: #f76c6c;
-    box-shadow: 5px -5px 5px #f76c6c;
-    margin-top: 20px;
+  background-color: whitesmoke;
+  color: #f76c6c;
+  box-shadow: 5px -5px 5px #f76c6c;
+  margin-top: 20px;
 }
 
 .logo {
-    margin-left: 2rem;
-    width : 110px;
-    display: block;
+  margin-left: 2rem;
+  width: 110px;
+  display: block;
 }
 
 .classe > img {
-    width: 100%;
+  width: 100%;
 }
 
-.button{
+.button {
   background-color: #f76c6c;
-  color : white;
-  padding : 1rem;
+  color: white;
+  padding: 1rem;
   width: 100px;
   border-radius: 25%;
 }
 
-.buttonfather{
+.buttonfather {
   display: flex;
   justify-content: center;
 }
@@ -149,7 +148,7 @@ footer {
 }
 
 /********** SECTION PRESENTATION **********/
-#presentation{
+#presentation {
   padding-top: 2rem;
   height: max-content;
 }
@@ -174,7 +173,8 @@ footer {
   box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
-#photo-eleve {
+.presentation-1 img:first-child,
+.presentation-2 img:first-child {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -245,15 +245,15 @@ footer {
 }
 
 @media screen and (min-width: 450px) {
-  ul{
-      display:initial;
+  ul {
+    display: initial;
   }
 }
 
-@media screen and (min-width : 450px){
-  .trombi{
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+@media screen and (min-width: 450px) {
+  .trombi {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
