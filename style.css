@@ -56,10 +56,11 @@ body:not(nav):not(footer) {
 
 .icon {
   width: 24px;
+  height: 24px;
 }
 
 .student {
-  width: 170px;
+  width: 80%;
 }
 
 .iconstrombi {
@@ -100,12 +101,16 @@ a {
   color: #f76c6c;
 }
 
-footer {
+.presentation > div > img{
+  width: 150px;
+}
+
+/* footer {
   background-color: whitesmoke;
   color: #f76c6c;
   box-shadow: 5px -5px 5px #f76c6c;
   margin-top: 20px;
-}
+} */
 
 .logo {
   margin-left: 2rem;
@@ -135,24 +140,31 @@ footer {
   --blanc-wild: rgba(249, 251, 251, 1);
 }
 
+.box-img {
+  height : 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /********** SECTION PRESENTATION **********/
 #presentation {
   padding-top: 2rem;
   height: max-content;
 }
 
-.presentation-1 {
+.presentation > div:nth-child(2n+1) {
   background-color: var(--rouge-wild);
   color: var(--blanc-wild);
 }
 
-.presentation-2 {
+.presentation > div:nth-child(2n) {
   background-color: var(--blanc-wild);
   color: rgba(237, 108, 109, 1);
 }
 
-.presentation-1,
-.presentation-2 {
+.presentation > div:nth-child(2n+1),
+.presentation > div:nth-child(2n) {
   margin: 0 1rem 1rem 1rem;
   padding: 1rem;
   display: grid;
@@ -161,8 +173,8 @@ footer {
   box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
-.presentation-1 img:first-child,
-.presentation-2 img:first-child {
+.presentation > div:nth-child(2n+1) img:first-child,
+.presentation > div:nth-child(2n) img:first-child {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -187,8 +199,8 @@ footer {
   font-size: 0.75rem;
 }
 
-.presentation-1 > p,
-.presentation-2 > p {
+.presentation > div:nth-child(2n+1) > p,
+.presentation > div:nth-child(2n) > p {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
@@ -224,17 +236,15 @@ footer {
 
 /********** RESPONSIVE DESCRIPTION **********/
 @media screen and (min-width: 450px) {
-  .presentation-1,
-  .presentation-2 {
+  .presentation > div:nth-child(2n+1),
+  .presentation > div:nth-child(2n) {
     max-width: 65vw;
     margin: 0 2rem 2rem 2rem;
   }
-  .presentation-1 {
-    /* float: left; */
+  .presentation > div:nth-child(2n+1) {
     margin: 1rem auto 1rem 2rem;
   }
-  .presentation-2 {
-    /* float: right; */
+  .presentation > div:nth-child(2n) {
     margin: 1rem 2rem 1rem auto;
   }
   .biographie > h2 {
@@ -246,11 +256,13 @@ footer {
   .biographie > h5 {
     font-size: 1.2rem;
   }
-  .presentation-1 > p,
-  .presentation-2 > p {
+  .presentation > div:nth-child(2n+1) > p,
+  .presentation > div:nth-child(2n) > p {
     font-size: 1.2rem;
   }
 }
+
+
 
 @media screen and (min-width: 450px) {
   ul {
