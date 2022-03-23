@@ -112,4 +112,4 @@ const student = [
     )    
 ]
 
-export default students;
+export default student;
