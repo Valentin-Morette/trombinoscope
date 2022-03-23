@@ -27,9 +27,21 @@ body:not(nav):not(footer) {
   font-size: 2em;
 }
 
-.globalteacher {
-  display: flex;
-  justify-content: space-around;
+.globalteacher{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.globalteacher > div:last-child{
+  grid-column-start: 1;     
+  grid-column-end: -1; 
+}
+
+.globalteacher > div {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 20px;
 }
 
 .teacher {
@@ -76,17 +88,36 @@ nav {
   display: flex;
   align-items: center;
   position: fixed;
-  justify-content: space-between;
   width: 100%;
+  height: 110px;
 }
 
-nav > h1 {
-  font-size: 3rem;
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.logo {
+  margin-left: 1rem;
+  width: 100px;
+  display: block;
+}
+
+.titre{
+  margin-left: 1.5rem;
+  display: block;
 }
 
 ul {
-  margin-right: 5rem;
+  margin-right: 4rem;
+  margin-right: 2rem;
   display: none;
+  align-items: right;
 }
 
 li {
@@ -108,17 +139,14 @@ a {
 /* footer {
   background-color: whitesmoke;
   color: #f76c6c;
-  box-shadow: 5px -5px 5px #f76c6c;
-  margin-top: 20px;
+  /*box-shadow: 5px -5px 5px #f76c6c;*/
+  /* margin-top: 20px;
+} */
+  /* text-align: center;
+  font-weight: bold;
 } */
 
-.logo {
-  margin-left: 2rem;
-  width: 110px;
-  display: block;
-}
-
-.classe > img {
+.groupe > img {
   width: 100%;
 }
 
@@ -275,7 +303,12 @@ a {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
+
+  h1 {
+    margin-left: 2rem;
+  }
 }
+
 
 @media screen and (min-width: 450px) {
   .top-link {
@@ -283,4 +316,52 @@ a {
   }
 }
 
+@media screen and (min-width : 450px) {
+  .globalteacher{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width : 450px) {
+  .groupeclasse{
+    display: flex;
+    justify-content: space-around;
+  }
+  .groupe{
+    width: 50%;
+    margin: 2rem;
+    display: flex;
+    align-items: center; 
+  }
+  .groupe > img{
+    width: 100%; 
+  }
+  .groupe > p{
+    width: 80%;
+  }
+}
+
 /* END RESPONSIVE DESCRIPTION */
+
+@media screen and (min-width: 450px){
+  .logo {
+    content:url(media/icons/wild-red.png) ;
+    margin-left: 1rem;
+    width: 150px;
+  }
+
+  nav{
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+
+  }
+
+  h2 {
+    font-size: 0.7rem;
+  }
+}

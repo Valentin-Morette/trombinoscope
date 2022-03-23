@@ -2,7 +2,7 @@ function createTrombi(data){
     return `
     <div>
         <div class="box-img">
-            <img src="${data.redimg}" class="student" alt="photo-alexandra">
+            <img src="${data.redimg}" class="student" alt="photo-${data.name}">
         </div>
         <div class="iconstrombi">
         <a href="${data.linkedin}"><img src="/media/icons/linkedin-red.png" class="icon" alt="icon linkedin"></a>
