@@ -155,6 +155,9 @@ a {
   font-weight: bold;
 } */
 
+.groupe {
+  margin: 0 1rem;
+}
 .groupe > img {
   width: 100%;
 }
