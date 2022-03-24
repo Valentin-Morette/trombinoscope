@@ -27,16 +27,16 @@ const student = [
         "https://github.com/Alexandra-Rdrgs"
     ),
     new Student(
-        "Jeffrey",
-        "Rigaux",
-        "22",
-        "Saint Eulien",
-        "./media/pictures/jeffrey-1-white.png",
-        "./media/pictures/jeffrey-1-red.png",
-        "Travail d'équipe, créativité, déterminé",
-        "Ancien étudiant en BTS SNIR (Système Numérique Informatique et Réseaux) j'aime sortir, faire du sport et jouer aux jeux vidéos. Je souhaite devenir développeur web mobile pour le moment puis m'orienter vers le jeux vidéos par la suite.",
-        "https://www.linkedin.com/in/jeffrey-rigaux-086463234/",
-        "https://github.com/PiXeleum"
+        "Valentin",
+        "Morette",
+        "27",
+        "Rethel",
+        "./media/pictures/valentin-1-white.png",
+        "./media/pictures/valentin-1-red.png",
+        "Travail en équipe, curieux, flexible",
+        "Ancien comptable, en reconversion dans le développement Web, j'aime la moto, la piscine et les jeux vidéo. Mes objectifs sont d'exceller dans ce nouveau domaine pour dans un premier temps trouver un travail que j'aime et faire mes premières armes pour ensuite pouvoir faire des projets personnels et pourquoi pas créer ma propre entreprise.",
+        "https://www.linkedin.com/in/valentin-morette-bb010a17a/",
+        "https://github.com/Birious"
     ),
     new Student(
         "Quentin",
@@ -87,16 +87,16 @@ const student = [
         "https://github.com/Simon-Duc"
     ),
     new Student(
-        "Valentin",
-        "Morette",
-        "27",
-        "Rethel",
-        "./media/pictures/valentin-1-white.png",
-        "./media/pictures/valentin-1-red.png",
-        "Travail en équipe, curieux, flexible",
-        "Ancien comptable, en reconversion dans le développement Web, j'aime la moto, la piscine et les jeux vidéo. Mes objectifs sont d'exceller dans ce nouveau domaine pour dans un premier temps trouver un travail que j'aime et faire mes premières armes pour ensuite pouvoir faire des projets personnels et pourquoi pas créer ma propre entreprise.",
-        "https://www.linkedin.com/in/valentin-morette-bb010a17a/",
-        "https://github.com/Birious"
+        "Jeffrey",
+        "Rigaux",
+        "22",
+        "Saint Eulien",
+        "./media/pictures/jeffrey-1-white.png",
+        "./media/pictures/jeffrey-1-red.png",
+        "Travail d'équipe, créativité, déterminé",
+        "Ancien étudiant en BTS SNIR (Système Numérique Informatique et Réseaux) j'aime sortir, faire du sport et jouer aux jeux vidéos. Je souhaite devenir développeur web mobile pour le moment puis m'orienter vers le jeux vidéos par la suite.",
+        "https://www.linkedin.com/in/jeffrey-rigaux-086463234/",
+        "https://github.com/PiXeleum"
     ),
     new Student(
         "Jaafar",
