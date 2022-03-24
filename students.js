@@ -70,7 +70,7 @@ const student = [
         "./media/pictures/louis-1-white.png",
         "./media/pictures/louis-1-red.png",
         "Curieux, patient, empathique et percévérant",
-        "description",
+        "Ancien étudiant d'un BTS MUC (Management des Unités Commerciales), j'ai décidé de me reconvertir dans le domaine de l'informatique. À la suite de cette décision j'ai intégré la Wild Code School dans le but de devenir développeur web, et aussi de poursuivre mon parcours dans ce domaine.",
         "https://www.linkedin.com/in/louis-dufourmantelle-503462234/",
         "https://github.com/loulou0704"
     ),
