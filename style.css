@@ -247,7 +247,7 @@ a {
 }
 /***** END SECTION PRESENTATION *****/
 
-/***** Scroll to the top button start *****/
+/***** Scroll to the top "button" start *****/
 .top-link {
   transition: all 0.25s ease-in-out;
   position: fixed;
@@ -264,7 +264,7 @@ a {
   background-color: rgba(249, 251, 251, 0.89);
   box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.2);
 }
-/***** Scroll to the top button end *****/
+/***** Scroll to the top "button" end *****/
 
 /********** RESPONSIVE DESCRIPTION **********/
 @media screen and (min-width: 450px) {
