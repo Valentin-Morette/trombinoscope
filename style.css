@@ -105,7 +105,7 @@ h1 {
   font-size: 1.5rem;
 }
 
-h2 {
+nav h2 {
   font-size: 0.7rem;
   text-align: center;
   margin-top: 0.5rem;
@@ -224,6 +224,9 @@ a {
   grid-row-start: 1;
   grid-row-end: 2;
   margin-left: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .biographie > h2 {
   font-size: 1.1rem;
