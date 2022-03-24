@@ -1,9 +1,10 @@
 class Student{
-    constructor (name, firstname, age, city, whiteimg, redimg, skills, desc, linkedin, github) {
+    constructor (name, firstname, age, city, mobility, whiteimg, redimg, skills, desc, linkedin, github) {
         this.name = name;
         this.firstname = firstname;
         this.age = age;
         this.city = city;
+        this.mobility = mobility;
         this.whiteimg = whiteimg;
         this.redimg = redimg;
         this.skills = skills;
@@ -19,6 +20,7 @@ const student = [
         "De Brito",
         "30",
         "Reims",
+        "Disponible sur Reims, Paris, Metz, Strasbourg et Lisbonne",
         "./media/pictures/alexandra-1-white.png",
         "./media/pictures/alexandra-1-red.png",
         "Créativité, ouverture d'esprit, organisée et polyvalante",
@@ -31,6 +33,7 @@ const student = [
         "Rigaux",
         "22",
         "Saint Eulien",
+        "Disponible sur",
         "./media/pictures/jeffrey-1-white.png",
         "./media/pictures/jeffrey-1-red.png",
         "Travail d'équipe, créativité, déterminé",
@@ -43,6 +46,7 @@ const student = [
         "Samuel",
         "22",
         "Reims",
+        "Disponible sur la région Grand-Est et Paris",
         "./media/pictures/quentin-1-white.png",
         "./media/pictures/quentin-1-red.png",
         "Travail d'équipe, à l'écoute, engagé et compréhensif",
@@ -55,6 +59,7 @@ const student = [
         "Depelsemacker",
         "24",
         "Reims",
+        "Disponible sur la région Grand-Est et Paris",
         "./media/pictures/theo-1-white.png",
         "./media/pictures/theo-1-red.png",
         "Leadership, adaptabilité, communication et jovialité",
@@ -67,6 +72,7 @@ const student = [
         "Dufourmantelle",
         "23",
         "Reims",
+        "",
         "./media/pictures/louis-1-white.png",
         "./media/pictures/louis-1-red.png",
         "Curieux, patient, empathique et percévérant",
@@ -79,6 +85,7 @@ const student = [
         "Duc",
         "33",
         "Reims",
+        "",
         "./media/pictures/simon-1-white.png",
         "./media/pictures/simon-1-red.png",
         "Curiosité, rigeur, travail d'équipe et autonomie",
@@ -91,6 +98,7 @@ const student = [
         "Morette",
         "27",
         "Rethel",
+        "Disponible sur la région Grand-Est et Paris",
         "./media/pictures/valentin-1-white.png",
         "./media/pictures/valentin-1-red.png",
         "Travail en équipe, curieux, flexible",
@@ -103,6 +111,7 @@ const student = [
         "Cherif",
         "33",
         "Reims",
+        "Disponible sur la région Grand-Est et Paris",
         "./media/pictures/jaafar-2-white.png",
         "./media/pictures/jaafar-2-red.png",
         "Adaptabilité, communication, travail d'équipe et perséverance",
