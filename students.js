@@ -1,9 +1,10 @@
 class Student{
-    constructor (name, firstname, age, city, whiteimg, redimg, skills, desc, linkedin, github) {
+    constructor (name, firstname, age, city, mobility, whiteimg, redimg, skills, desc, linkedin, github) {
         this.name = name;
         this.firstname = firstname;
         this.age = age;
         this.city = city;
+        this.mobility = mobility;
         this.whiteimg = whiteimg;
         this.redimg = redimg;
         this.skills = skills;
@@ -19,6 +20,7 @@ const student = [
         "De Brito",
         "30",
         "Reims",
+        "Disponible sur Reims, Paris, Metz, Strasbourg et Lisbonne",
         "./media/pictures/alexandra-1-white.png",
         "./media/pictures/alexandra-1-red.png",
         "Créativité, ouverture d'esprit, organisée et polyvalante",
@@ -31,6 +33,7 @@ const student = [
         "Morette",
         "27",
         "Rethel",
+        "Disponible sur Reims, Paris",
         "./media/pictures/valentin-1-white.png",
         "./media/pictures/valentin-1-red.png",
         "Travail en équipe, curieux, flexible",
@@ -43,10 +46,11 @@ const student = [
         "Samuel",
         "22",
         "Reims",
+        "Disponible sur la région Grand-Est et Paris",
         "./media/pictures/quentin-1-white.png",
         "./media/pictures/quentin-1-red.png",
         "Travail d'équipe, à l'écoute, engagé et compréhensif",
-        "description",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nemo non quidem culpa eligendi nesciunt veritatis eveniet illo cupiditate cumque labore beatae perferendis accusantium unde, nisi minus assumenda quas! Cum illum error molestiae officia? Harum, autem pariatur at, sint illo nulla sit modi dolore iusto earum itaque voluptatum iure consequuntur.",
         "https://www.linkedin.com/in/quentin-samuel-7a9092235/",
         "https://github.com/QuentinSamuel"
     ),
@@ -55,10 +59,11 @@ const student = [
         "Depelsemacker",
         "24",
         "Reims",
+        "Disponible sur la région Grand-Est et Paris",
         "./media/pictures/theo-1-white.png",
         "./media/pictures/theo-1-red.png",
         "Leadership, adaptabilité, communication et jovialité",
-        "description",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nemo non quidem culpa eligendi nesciunt veritatis eveniet illo cupiditate cumque labore beatae perferendis accusantium unde, nisi minus assumenda quas! Cum illum error molestiae officia? Harum, autem pariatur at, sint illo nulla sit modi dolore iusto earum itaque voluptatum iure consequuntur.",
         "https://www.linkedin.com/in/theode/",
         "https://github.com/theoDep"
     ),
@@ -67,10 +72,11 @@ const student = [
         "Dufourmantelle",
         "23",
         "Reims",
+        "Disponible sur la région Grand-Est et Paris",
         "./media/pictures/louis-1-white.png",
         "./media/pictures/louis-1-red.png",
         "Curieux, patient, empathique et percévérant",
-        "description",
+        "Ancien étudiant d'un BTS MUC (Management des Unités Commerciales), j'ai décidé de me reconvertir dans le domaine de l'informatique. À la suite de cette décision j'ai intégré la Wild Code School dans le but de devenir développeur web, et aussi de poursuivre mon parcours dans ce domaine.",
         "https://www.linkedin.com/in/louis-dufourmantelle-503462234/",
         "https://github.com/loulou0704"
     ),
@@ -79,10 +85,11 @@ const student = [
         "Duc",
         "33",
         "Reims",
+        "Disponible sur Paris, Reims, Strasbourg",
         "./media/pictures/simon-1-white.png",
         "./media/pictures/simon-1-red.png",
         "Curiosité, rigeur, travail d'équipe et autonomie",
-        "description",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nemo non quidem culpa eligendi nesciunt veritatis eveniet illo cupiditate cumque labore beatae perferendis accusantium unde, nisi minus assumenda quas! Cum illum error molestiae officia? Harum, autem pariatur at, sint illo nulla sit modi dolore iusto earum itaque voluptatum iure consequuntur.",
         "https://www.linkedin.com/in/simon-duc-858481213/",
         "https://github.com/Simon-Duc"
     ),
@@ -91,6 +98,7 @@ const student = [
         "Rigaux",
         "22",
         "Saint Eulien",
+        "Disponible sur la région Grand-Est",
         "./media/pictures/jeffrey-1-white.png",
         "./media/pictures/jeffrey-1-red.png",
         "Travail d'équipe, créativité, déterminé",
@@ -103,6 +111,7 @@ const student = [
         "Cherif",
         "33",
         "Reims",
+        "Disponible sur la région Grand-Est et Paris",
         "./media/pictures/jaafar-2-white.png",
         "./media/pictures/jaafar-2-red.png",
         "Adaptabilité, communication, travail d'équipe et perséverance",

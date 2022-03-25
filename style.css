@@ -2,6 +2,15 @@
   font-family: "comfortaa";
   src: url(./fonts/Comfortaa-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: "Nunito";
+  src: url(.Nunito-VariableFont_wght.ttf);
+}
+
+:root {
+  --rouge-wild: rgba(237, 108, 109, 1);
+  --blanc-wild: rgba(249, 251, 251, 1);
+}
 
 * {
   margin: 0;
@@ -17,31 +26,35 @@ body {
   font-family: comfortaa;
 }
 
-body:not(nav):not(footer) {
+/* body:not(nav),body:not(footer) {
   font-family: "Comfortaa";
-}
+} */
 
 .training {
   text-align: center;
   padding: 20px;
   font-size: 2em;
 }
-
-.globalteacher{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.globalteacher > div > div{
+  height: 250px;
+  display: flex;
+  align-items: center;
+}
+.globalteacher {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.globalteacher > div:last-child{
-  grid-column-start: 1;     
-  grid-column-end: -1; 
+.globalteacher > div:last-child {
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
 
 .globalteacher > div {
-    display : flex;
-    flex-direction: column;
-    align-items: center;
-    gap : 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .teacher {
@@ -77,9 +90,9 @@ body:not(nav):not(footer) {
 }
 
 nav {
-  background-color: whitesmoke;
-  color: #f76c6c;
-  box-shadow: 0px 5px 5px #f76c6c;
+  background-color: var(--blanc-wild);
+  color: var(--rouge-wild);
+  box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.2);
   flex-direction: row;
   display: flex;
   align-items: center;
@@ -114,18 +127,21 @@ ul {
 
 li {
   list-style: none;
-  color: #f76c6c;
+  color: var(--rouge-wild);
   font-size: 1.2rem;
-
 }
 
 a {
   text-decoration: none;
-  color: #f76c6c;
+  color: var(--rouge-wild);
 }
 
-.presentation > div > img{
+.presentation > div > img {
   width: 150px;
+}
+
+.groupe {
+  margin: 0 1rem;
 }
 
 .groupe > img {
@@ -133,8 +149,8 @@ a {
 }
 
 .button {
-  background-color: #f76c6c;
-  color: white;
+  background-color: var(--rouge-wild);
+  color: var(--blanc-wild);
   padding: 1rem;
   border-radius: 50%;
   width: 160px;
@@ -149,11 +165,6 @@ a {
   margin-top: 2rem;
 }
 
-:root {
-  --rouge-wild: rgba(237, 108, 109, 1);
-  --blanc-wild: rgba(249, 251, 251, 1);
-}
-
 .box-img {
   height : 250px;
   object-fit: contain;
@@ -162,40 +173,40 @@ a {
   align-items: center;
 }
 
-.box-img > img{
+.box-img > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 
 }
 
-/********** SECTION PRESENTATION **********/
+/********** Présentation section start **********/
 #presentation {
   padding-top: 2rem;
   height: max-content;
 }
 
-.presentation > div:nth-child(2n+1) {
+.presentation > div:nth-child(2n + 1) {
   background-color: var(--rouge-wild);
   color: var(--blanc-wild);
 }
 
 .presentation > div:nth-child(2n) {
   background-color: var(--blanc-wild);
-  color: rgba(237, 108, 109, 1);
+  color: var(--rouge-wild);
 }
 
-.presentation > div:nth-child(2n+1),
+.presentation > div:nth-child(2n + 1),
 .presentation > div:nth-child(2n) {
   margin: 0 1rem 1rem 1rem;
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  row-gap: 1rem;
   box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
-.presentation > div:nth-child(2n+1) img:first-child,
+.presentation > div:nth-child(2n + 1) img:first-child,
 .presentation > div:nth-child(2n) img:first-child {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -208,7 +219,10 @@ a {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-  margin-left: 1rem;
+  margin-left: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .biographie > h2 {
   font-size: 1.1rem;
@@ -218,10 +232,10 @@ a {
 }
 
 .biographie > h5 {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
 }
 
-.presentation > div:nth-child(2n+1) > p,
+.presentation > div:nth-child(2n + 1) > p,
 .presentation > div:nth-child(2n) > p {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -234,9 +248,9 @@ a {
   display: flex;
   justify-content: space-between;
 }
-/***** END SECTION PRESENTATION *****/
+/***** Présentation section end *****/
 
-/***** Scroll to the top button start *****/
+/***** Scroll to the top "button" start *****/
 .top-link {
   transition: all 0.25s ease-in-out;
   position: fixed;
@@ -248,22 +262,33 @@ a {
   justify-content: center;
   margin: 0 2rem 2rem 0;
   border-radius: 50%;
-  padding: 0.25rem;
   width: 50px;
   height: 50px;
   background-color: rgba(249, 251, 251, 0.89);
   box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.2);
 }
-/***** Scroll to the top button end *****/
+/***** Scroll to the top "button" end *****/
+
+/***** Footer start *****/
+footer {
+  background-color: var(--blanc-wild);
+  color: var(--rouge-wild);
+  font-family: "Nunito";
+  font-size: 0.7rem;
+  margin-top: 2rem;
+  padding: 0.25rem;
+  box-shadow: 0px -3px 4px 1px rgba(0, 0, 0, 0.2);
+}
+/***** Footer end *****/
 
 /********** RESPONSIVE DESCRIPTION **********/
 @media screen and (min-width: 450px) {
-  .presentation > div:nth-child(2n+1),
+  .presentation > div:nth-child(2n + 1),
   .presentation > div:nth-child(2n) {
     max-width: 65vw;
     margin: 0 2rem 2rem 2rem;
   }
-  .presentation > div:nth-child(2n+1) {
+  .presentation > div:nth-child(2n + 1) {
     margin: 1rem auto 1rem 2rem;
   }
   .presentation > div:nth-child(2n) {
@@ -278,13 +303,11 @@ a {
   .biographie > h5 {
     font-size: 1.2rem;
   }
-  .presentation > div:nth-child(2n+1) > p,
+  .presentation > div:nth-child(2n + 1) > p,
   .presentation > div:nth-child(2n) > p {
     font-size: 1.2rem;
   }
 }
-
-
 
 @media screen and (min-width: 450px) {
   ul {
@@ -300,20 +323,21 @@ a {
   }
 }
 
-@media screen and (min-width : 450px) {
-  .groupeclasse{
+@media screen and (min-width: 450px) {
+  .groupeclasse {
     display: flex;
     justify-content: space-around;
   }
-  .groupe{
+  .groupe {
     width: 50%;
     margin: 2rem;
     display: flex;
-    align-items: center; 
+    align-items: center;
   }
-  .groupe > img{
-    width: 100%; 
+  .groupe > img {
+    width: 100%;
   }
+
   .groupe > p{
     width: 100%;
   }
@@ -321,7 +345,7 @@ a {
 
 /* END RESPONSIVE DESCRIPTION */
 
-@media screen and (min-width: 450px){
+@media screen and (min-width: 450px) {
   .logo {
     content:url(media/icons/wild-red.png) ;
     width: 150px;
@@ -333,7 +357,6 @@ a {
 
   nav h1 {
     font-size: 2.5rem;
-
   }
 
   nav h2 {
