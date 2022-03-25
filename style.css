@@ -137,7 +137,7 @@ a {
 }
 
 .presentation > div > img {
-  width: 150px;
+  width: 170px;
 }
 
 .groupe {
@@ -222,17 +222,20 @@ a {
   margin-left: 0.75rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .biographie > h2 {
   font-size: 1.1rem;
 }
 .biographie > h4 {
-  font-size: 1rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+
 }
 
 .biographie > h5 {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
+  font-weight: 550;
 }
 
 .presentation > div:nth-child(2n + 1) > p,
