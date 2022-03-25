@@ -26,16 +26,20 @@ body {
   font-family: comfortaa;
 }
 
-body:not(nav):not(footer) {
+/* body:not(nav),body:not(footer) {
   font-family: "Comfortaa";
-}
+} */
 
 .training {
   text-align: center;
   padding: 20px;
   font-size: 2em;
 }
-
+.globalteacher > div > div{
+  height: 250px;
+  display: flex;
+  align-items: center;
+}
 .globalteacher {
   display: grid;
   grid-template-columns: 1fr 1fr;

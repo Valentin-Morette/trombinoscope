@@ -5,6 +5,7 @@ function createWhiteDesc(data){
             <div class="biographie">
                 <h2>${data.name} ${data.firstname}</h2>
                 <h4>${data.age} ans, ${data.city}</h4>
+                <h5>${data.mobility}</h5>
                 <h5>${data.skills}</h5>
                 <div class="icons">
                     <a href="${data.github}"><img src="./media/icons/github-white.png"
