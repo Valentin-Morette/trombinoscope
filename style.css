@@ -177,7 +177,14 @@ a {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
 
+.job{
+  font-size: 0.8rem;
+}
+
+.nameteacher, .namestudent{
+  font-weight: 600;
 }
 
 /********** Présentation section start **********/

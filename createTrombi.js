@@ -6,7 +6,7 @@ function createTrombi(data){
         <a href="${data.linkedin}"><img src="./media/icons/linkedin-red.png" class="icon" alt="icon linkedin"></a>
         <a href="${data.github}"><img src="./media/icons/github-red.png" class="icon" alt="icon github"></a>
         </div>
-        <p>${data.name}</p>
+        <p class="namestudent">${data.name}</p>
         </div>
     `;
 }
