@@ -1,9 +1,10 @@
 class Student{
-    constructor (name, firstname, age, city, whiteimg, redimg, skills, desc, linkedin, github) {
+    constructor (name, firstname, age, city, mobility, whiteimg, redimg, skills, desc, linkedin, github) {
         this.name = name;
         this.firstname = firstname;
         this.age = age;
         this.city = city;
+        this.mobility = mobility;
         this.whiteimg = whiteimg;
         this.redimg = redimg;
         this.skills = skills;
@@ -19,6 +20,7 @@ const student = [
         "De Brito",
         "30",
         "Reims",
+        "Disponible sur Reims, Paris, Metz, Strasbourg et Lisbonne",
         "./media/pictures/alexandra-1-white.png",
         "./media/pictures/alexandra-1-red.png",
         "Créativité, ouverture d'esprit, organisée et polyvalante",
@@ -43,6 +45,7 @@ const student = [
         "Samuel",
         "22",
         "Reims",
+        "Disponible sur la région Grand-Est et Paris",
         "./media/pictures/quentin-1-white.png",
         "./media/pictures/quentin-1-red.png",
         "Travail d'équipe, à l'écoute, engagé et compréhensif",
@@ -55,6 +58,7 @@ const student = [
         "Depelsemacker",
         "24",
         "Reims",
+        "Disponible sur la région Grand-Est et Paris",
         "./media/pictures/theo-1-white.png",
         "./media/pictures/theo-1-red.png",
         "Leadership, adaptabilité, communication et jovialité",
@@ -67,10 +71,11 @@ const student = [
         "Dufourmantelle",
         "23",
         "Reims",
+        "",
         "./media/pictures/louis-1-white.png",
         "./media/pictures/louis-1-red.png",
         "Curieux, patient, empathique et percévérant",
-        "description",
+        "Ancien étudiant d'un BTS MUC (Management des Unités Commerciales), j'ai décidé de me reconvertir dans le domaine de l'informatique. À la suite de cette décision j'ai intégré la Wild Code School dans le but de devenir développeur web, et aussi de poursuivre mon parcours dans ce domaine.",
         "https://www.linkedin.com/in/louis-dufourmantelle-503462234/",
         "https://github.com/loulou0704"
     ),
@@ -79,6 +84,7 @@ const student = [
         "Duc",
         "33",
         "Reims",
+        "",
         "./media/pictures/simon-1-white.png",
         "./media/pictures/simon-1-red.png",
         "Curiosité, rigeur, travail d'équipe et autonomie",
@@ -103,6 +109,7 @@ const student = [
         "Cherif",
         "33",
         "Reims",
+        "Disponible sur la région Grand-Est et Paris",
         "./media/pictures/jaafar-2-white.png",
         "./media/pictures/jaafar-2-red.png",
         "Adaptabilité, communication, travail d'équipe et perséverance",
