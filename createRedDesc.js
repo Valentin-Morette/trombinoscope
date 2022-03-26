@@ -8,9 +8,9 @@ function createRedDesc(data){
                 <h5>${data.mobility}</h5>
                 <h5>${data.skills}</h5>
                 <div class="icons">
-                    <a href="${data.github}"><img src="./media/icons/github-red.png"
+                    <a href="${data.github}" target="_blank"><img src="./media/icons/github-red.png"
                             alt="icon-github-red" class="icon"></a>
-                    <a href="${data.linkedin}"><img
+                    <a href="${data.linkedin}" target="_blank"><img
                             src="./media/icons/linkedin-red.png" alt="icon-linkedin-red" class="icon"></a>
                     <img src="./media/icons/website-red.png" alt="icon-link-red" class="icon">
                 </div>
