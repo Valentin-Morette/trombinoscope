@@ -2,6 +2,7 @@
   font-family: "comfortaa";
   src: url(./fonts/Comfortaa-VariableFont_wght.ttf);
 }
+
 @font-face {
   font-family: "Nunito";
   src: url(.Nunito-VariableFont_wght.ttf);
@@ -24,22 +25,219 @@ html {
 
 body {
   font-family: comfortaa;
+  line-height: 1.5em;
 }
 
-/* body:not(nav),body:not(footer) {
-  font-family: "Comfortaa";
-} */
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--rouge-wild);
+}
+
+/* NAVBAR */
+
+nav {
+  font-family: Nunito;
+  background-color: var(--blanc-wild);
+  color: var(--rouge-wild);
+  box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.2); 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top : 0;
+  padding: 1rem;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+nav h2 {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.logo {
+  width: 80px;
+}
+
+.titre {
+  display: block;
+}
+
+nav ul {
+  display: none;
+  align-items: right;
+}
+
+nav li {
+  list-style: none;
+  color: var(--rouge-wild);
+  font-size: 1.2rem;
+}
+
+/* NAVBAR END */
+
+/* STUDENTS TROMBINOSCOPE */
+
+.trombi {
+  padding: 2rem;
+  display: grid;
+  justify-content: space-around;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.trombi > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.iconstrombi {
+  display: flex;
+  gap: 2rem;
+}
+
+.box-img {
+  height : 250px;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* STUDENTS TROMBINOSCOPE END */
+
+/* BUTTON FOR RANDOM PRESENTATION */
+
+.button {
+  background-color: var(--rouge-wild);
+  color: var(--blanc-wild);
+  padding: 1rem;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.buttonfather {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* BUTTON FOR RANDOM PRESENTATION END */
+
+/* PRESENTATION */
+
+#presentation {
+  padding-top: 2rem;
+  height: max-content;
+}
+
+.presentation > div:nth-child(2n + 1) {
+  background-color: var(--rouge-wild);
+  color: var(--blanc-wild);
+}
+
+.presentation > div:nth-child(2n) {
+  background-color: var(--blanc-wild);
+  color: var(--rouge-wild);
+}
+
+.presentation > div {
+  margin: 0 1rem 1rem 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1rem;
+  box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.presentation > div img:first-child{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.biographie {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-left: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.biographie > h2 {
+  font-size: 1.1rem;
+}
+
+.biographie > h4 {
+  font-size: 0.7rem;
+  font-weight: 600;
+
+}
+
+.biographie > h5 {
+  font-size: 0.6rem;
+  font-weight: 550;
+}
+
+.presentation > div:nth-child(2n + 1) > p,
+.presentation > div:nth-child(2n) > p {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-size: 0.75rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  gap : 2rem;
+}
+
+.presentation > div > img {
+  width: 170px;
+}
+
+/* PRESENTATION END */
+
+/* TEACHERS TROMBINOSCOPE */
 
 .training {
   text-align: center;
   padding: 20px;
   font-size: 2em;
 }
+
 .globalteacher > div > div{
   height: 250px;
   display: flex;
   align-items: center;
 }
+
 .globalteacher {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -65,79 +263,12 @@ body {
   text-align: center;
 }
 
-.trombi {
-  padding: 2rem;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+.job{
+  font-size: 0.8rem;
 }
 
-.trombi > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.icon {
-  width: 24px;
-  height: 24px;
-}
-
-.iconstrombi {
-  display: flex;
-  gap: 2rem;
-}
-
-nav {
-  background-color: var(--blanc-wild);
-  color: var(--rouge-wild);
-  box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.2);
-  flex-direction: row;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: sticky;
-  top: 0;
-  padding: 1rem;
-}
-
-nav h1 {
-  font-size: 1.5rem;
-}
-
-nav h2 {
-  font-size: 1rem;
-  text-align: center;
-  margin-top: 0.5rem;
-}
-
-.logo {
-  width: 80px;
-}
-
-.titre{
-  display: block;
-}
-
-ul {
-  display: none;
-  align-items: right;
-}
-
-li {
-  list-style: none;
-  color: var(--rouge-wild);
-  font-size: 1.2rem;
-}
-
-a {
-  text-decoration: none;
-  color: var(--rouge-wild);
-}
-
-.presentation > div > img {
-  width: 170px;
+.nameteacher, .namestudent{
+  font-weight: 600;
 }
 
 .groupe {
@@ -148,119 +279,11 @@ a {
   width: 100%;
 }
 
-.button {
-  background-color: var(--rouge-wild);
-  color: var(--blanc-wild);
-  padding: 1rem;
-  border-radius: 50%;
-  width: 160px;
-  height: 160px;
-  font-family: inherit;
-  font-size: inherit;
-}
 
-.buttonfather {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
+/* TEACHER TROMBINOSCOPE END */
 
-.box-img {
-  height : 250px;
-  object-fit: contain;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* SCROOL TO THE TOP BUTTON */
 
-.box-img > img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.job{
-  font-size: 0.8rem;
-}
-
-.nameteacher, .namestudent{
-  font-weight: 600;
-}
-
-/********** Présentation section start **********/
-#presentation {
-  padding-top: 2rem;
-  height: max-content;
-}
-
-.presentation > div:nth-child(2n + 1) {
-  background-color: var(--rouge-wild);
-  color: var(--blanc-wild);
-}
-
-.presentation > div:nth-child(2n) {
-  background-color: var(--blanc-wild);
-  color: var(--rouge-wild);
-}
-
-.presentation > div:nth-child(2n + 1),
-.presentation > div:nth-child(2n) {
-  margin: 0 1rem 1rem 1rem;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 1rem;
-  box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.2);
-}
-
-.presentation > div:nth-child(2n + 1) img:first-child,
-.presentation > div:nth-child(2n) img:first-child {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.biographie {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  margin-left: 0.75rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.biographie > h2 {
-  font-size: 1.1rem;
-}
-.biographie > h4 {
-  font-size: 0.7rem;
-  font-weight: 600;
-
-}
-
-.biographie > h5 {
-  font-size: 0.6rem;
-  font-weight: 550;
-}
-
-.presentation > div:nth-child(2n + 1) > p,
-.presentation > div:nth-child(2n) > p {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  font-size: 0.75rem;
-}
-
-.icons {
-  display: flex;
-  justify-content: space-between;
-}
-/***** Présentation section end *****/
-
-/***** Scroll to the top "button" start *****/
 .top-link {
   transition: all 0.25s ease-in-out;
   position: fixed;
@@ -277,9 +300,11 @@ a {
   background-color: rgba(249, 251, 251, 0.89);
   box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.2);
 }
-/***** Scroll to the top "button" end *****/
 
-/***** Footer start *****/
+/* SCROOL TO THE TOP BUTTON END */
+
+/* FOOTER */
+
 footer {
   background-color: var(--blanc-wild);
   color: var(--rouge-wild);
@@ -289,79 +314,28 @@ footer {
   padding: 0.25rem;
   box-shadow: 0px -3px 4px 1px rgba(0, 0, 0, 0.2);
 }
-/***** Footer end *****/
 
-/********** RESPONSIVE DESCRIPTION **********/
-@media screen and (min-width: 450px) {
-  .presentation > div:nth-child(2n + 1),
-  .presentation > div:nth-child(2n) {
-    max-width: 65vw;
-    margin: 0 2rem 2rem 2rem;
-  }
-  .presentation > div:nth-child(2n + 1) {
-    margin: 1rem auto 1rem 2rem;
-  }
-  .presentation > div:nth-child(2n) {
-    margin: 1rem 2rem 1rem auto;
-  }
-  .biographie > h2 {
-    font-size: 1.75rem;
-  }
-  .biographie > h4 {
-    font-size: 1.6rem;
-  }
-  .biographie > h5 {
-    font-size: 1.2rem;
-  }
-  .presentation > div:nth-child(2n + 1) > p,
-  .presentation > div:nth-child(2n) > p {
-    font-size: 1.2rem;
-  }
-}
+/* FOOTER END */
+
+/* RESPONSIVE ON DISPLAY */
 
 @media screen and (min-width: 450px) {
-  ul {
+
+  /* NAVBAR */
+
+  nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap : 0.5rem;
   }
-  .globalteacher{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-}
 
-@media screen and (min-width: 450px) {
-  .groupeclasse {
-    display: flex;
-    justify-content: space-around;
-  }
-  .groupe {
-    width: 50%;
-    margin: 2rem;
-    display: flex;
-    align-items: center;
-  }
-  .groupe > img {
-    width: 100%;
-  }
-
-  .groupe > p{
-    width: 100%;
-  }
-}
-
-/* END RESPONSIVE DESCRIPTION */
-
-@media screen and (min-width: 450px) {
   .logo {
     content:url(media/icons/wild-red.png) ;
     width: 150px;
   }
 
-  nav{
+  nav {
     justify-content: space-around;
   }
 
@@ -372,4 +346,73 @@ footer {
   nav h2 {
     font-size: 1.5rem;
   }
+
+  /* NAVBAR END */
+
+  /* PRESENTATION */
+
+  .presentation > div {
+    max-width: 65vw;
+    margin: 0 2rem 2rem 2rem;
+  }
+
+  .presentation > div:nth-child(2n + 1) {
+    margin: 1rem auto 1rem 2rem;
+  }
+
+  .presentation > div:nth-child(2n) {
+    margin: 1rem 2rem 1rem auto;
+  }
+
+  .biographie > h2 {
+    font-size: 1.75rem;
+  }
+
+  .biographie > h4 {
+    font-size: 1.6rem;
+  }
+
+  .biographie > h5 {
+    font-size: 1.2rem;
+  }
+
+  .presentation > div:nth-child(2n + 1) > p,
+  .presentation > div:nth-child(2n) > p {
+    font-size: 1.2rem;
+  }
+
+  /* PRESENTATION END */
+
+  /* TROMBINOSCOPE TEACHERS */
+
+  .globalteacher {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .groupe {
+    width: 50%;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .groupe > img {
+    width: 100%;
+  }
+
+  .groupe > p {
+    width: 100%;
+  }
+
+  .groupeclasse {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* TROMBINOSCOPE TEACHERS END */
+
 }
+
+/* END RESPONSIVE DESCRIPTION */
