@@ -8,9 +8,9 @@ function createWhiteDesc(data){
                 <h5>${data.mobility}</h5>
                 <h5>${data.skills}</h5>
                 <div class="icons">
-                    <a href="${data.github}"><img src="./media/icons/github-white.png"
+                    <a href="${data.github}" target="_blank"><img src="./media/icons/github-white.png"
                             alt="icon-github-white" class="icon"></a>
-                    <a href="${data.linkedin}"><img
+                    <a href="${data.linkedin}" target="_blank"><img
                             src="./media/icons/linkedin-white.png" alt="icon-linkedin-white" class="icon"></a>
                     <img src="./media/icons/website-white.png" alt="icon-link-white" class="icon">
                 </div>
