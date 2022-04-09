@@ -116,8 +116,8 @@ const student = [
         "./media/pictures/jaafar-2-red.png",
         "Adaptabilité, communication, travail d'équipe et perséverance",
         "Après quelques années dans l'éducation en tant qu'assistant pédagogique puis professeur des écoles contractuel, la période de la pandémie m'a donné le temps de réfléchir à trouver une voie dans laquelle m'épanouir. Le développement web correspondait le mieux à ce désir. Mes hobbies : les arts visuels, la littérature japonaise, et les jeux de toutes sortes",
-        "https://www.linkedin.com/in/louis-dufourmantelle-503462234/",
-        "https://github.com/loulou0704"
+        "https://www.linkedin.com/in/jaafar-cherif/",
+        "https://github.com/Jsuiscoince"
     )
 ]
 
