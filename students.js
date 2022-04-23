@@ -39,7 +39,7 @@ const student = [
         "Travail en équipe, curieux, flexible",
         "Ancien comptable, en reconversion dans le développement Web, j'aime la moto, la piscine et les jeux vidéo. Mes objectifs sont d'exceller dans ce nouveau domaine pour dans un premier temps trouver un travail que j'aime et faire mes premières armes pour ensuite pouvoir faire des projets personnels et pourquoi pas créer ma propre entreprise.",
         "https://www.linkedin.com/in/valentin-morette-bb010a17a/",
-        "https://github.com/Birious"
+        "https://github.com/Valentin-Morette"
     ),
     new Student(
         "Quentin",
